@@ -23,26 +23,6 @@ No sluggish web views, no bloated electron frameworks, no heavy engines. Just pu
 
 ---
 
-## 🛠️ System Architecture
-
-The engine is modularized into three distinct foundational subsystems to ensure high maintainability and clean optimization paths:
-
-┌──────────────────────────────┐
-              │      Raylib GUI Layer        │
-              │  (Input, Textures, Rendering)│
-              └──────────────┬───────────────┘
-                             │  Sends Inputs / Polling
-                             ▼
-              ┌──────────────────────────────┐
-              │     Core Game State Engine   │
-              │  (Move Validation, Rulesets) │
-              └──────────────┬───────────────┘
-                             │  Provides Legal Moves
-                             ▼
-              ┌──────────────────────────────┐
-              │      AI Decision Engine      │
-              │ (Minimax, Pruning, Evaluation)│
-              └──────────────────────────────┘
 
               ### 1. The Core Board Representation
 *   Manages the 8x8 matrix representation (or Bitboard structure) of the active playing grid.
