@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Point this to wherever you extracted the Raylib prebuilt binaries
-set(RAYLIB_PATH "C:/raylib")
+set(RAYLIB_PATH "C:/raylib/raylib")
 
 include_directories(${RAYLIB_PATH}/include)
 link_directories(${RAYLIB_PATH}/lib)
