@@ -12,7 +12,7 @@ link_directories(${RAYLIB_PATH}/lib)
 
 file(GLOB SOURCES "src/*.cpp")
 
-add_executable(ChessEngine ${SOURCES})
+add_executable(ChessEngine ${SOURCES} "src/gamestate.cpp")
 
 target_link_libraries(ChessEngine raylib winmm)
 
